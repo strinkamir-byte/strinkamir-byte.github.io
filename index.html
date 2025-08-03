@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmiroGames - Instant Game Downloads</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6C5CE7;
+            --primary-dark: #5649c0;
+            --dark: #0F0F15;
+            --light: #F5F6FA;
+            --accent: #00CEC9;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: var(--dark);
+            color: var(--light);
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            padding: 2rem 0;
+            text-align: center;
+            background: linear-gradient(135deg, var(--dark) 0%, #1A1A2E 100%);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3rem;
+            font-weight: 600;
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+        
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .game-card {
+            background: #1A1A2E;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        
+        .game-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+            border-color: var(--primary);
+        }
+        
+        .game-image {
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .game-image::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 60%;
+            background: linear-gradient(to top, rgba(26,26,46,0.9) 0%, transparent 100%);
+        }
+        
+        .game-info {
+            padding: 1.5rem;
+        }
+        
+        .game-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--light);
+        }
+        
+        .game-genre {
+            font-size: 0.9rem;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+        
+        .download-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .download-btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 3rem 0;
+            margin-top: 4rem;
+            color: rgba(255,255,255,0.4);
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2.5rem;
+            }
+            
+            .game-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">AmiroGames</div>
+            <div class="tagline">Premium games. Instant downloads.</div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="game-grid">
+            <!-- Bad Parenting -->
+            <div class="game-card">
+                <div class="game-image" style="background-image: url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3205080/header.jpg?t=1739082924')"></div>
+                <div class="game-info">
+                    <h3 class="game-title">Bad Parenting</h3>
+                    <div class="game-genre">Simulation • Strategy</div>
+                    <a href="https://takeout-download-drive-eu.usercontent.google.com/download/Bad.Parenting.1.Mr.Red.Face-20250803T200445Z-1-001.zip?j=9d4da79b-8b1a-4a64-a96b-3d71f5d043bf&i=0&user=618873604813&authuser=1" class="download-btn" download>Download Now</a>
+                </div>
+            </div>
+            
+            <!-- Dinkum -->
+            <div class="game-card">
+                <div class="game-image" style="background-image: url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1062520/e044753ed5ae91bb81cbbb6bddfdd7cead5cc9af/capsule_616x353.jpg?t=1747292516')"></div>
+                <div class="game-info">
+                    <h3 class="game-title">Dinkum</h3>
+                    <div class="game-genre">Adventure • Farming</div>
+                    <a href="https://takeout-download-drive-eu.usercontent.google.com/download/Dinkum%20v0.8.3-20250803T201011Z-1-001.zip?j=9b8e1850-07d0-4fcc-9172-5a8d3be92204&i=0&user=618873604813&authuser=1" class="download-btn" download>Download Now</a>
+                </div>
+            </div>
+            
+            <!-- Five Nights At Freddy's 3 -->
+            <div class="game-card">
+                <div class="game-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/2/2b/FNAF3Artwork.png')"></div>
+                <div class="game-info">
+                    <h3 class="game-title">FNAF 3</h3>
+                    <div class="game-genre">Horror • Survival</div>
+                    <a href="YOUR_DOWNLOAD_LINK_3" class="download-btn" download>Download Now</a>
+                </div>
+            </div>
+            
+            <!-- Football Life Simulator -->
+            <div class="game-card">
+                <div class="game-image" style="background-image: url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3158270/f04d52a2630ca8cbc3e8f6b4dfbff329e1b77688/capsule_616x353.jpg?t=1753087683')"></div>
+                <div class="game-info">
+                    <h3 class="game-title">Football Life</h3>
+                    <div class="game-genre">Sports • Simulation</div>
+                    <a href="YOUR_DOWNLOAD_LINK_4" class="download-btn" download>Download Now</a>
+                </div>
+            </div>
+            
+            <!-- Hollow Knight -->
+            <div class="game-card">
+                <div class="game-image" style="background-image: url('https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000003208/4643fb058642335c523910f3a7910575f56372f612f7c0c9a497aaae978d3e51')"></div>
+                <div class="game-info">
+                    <h3 class="game-title">Hollow Knight</h3>
+                    <div class="game-genre">Adventure • Metroidvania</div>
+                    <a href="YOUR_DOWNLOAD_LINK_5" class="download-btn" download>Download Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            © 2023 AmiroGames. All rights reserved.<br>
+            <small>All game titles are property of their respective owners.</small>
+        </div>
+    </footer>
+
+    <script>
+        // Add animation to download buttons
+        document.querySelectorAll('.download-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                // Add click animation
+                this.style.transform = 'translateY(2px)';
+                setTimeout(() => {
+                    this.style.transform = 'translateY(-2px)';
+                }, 100);
+                
+                // Track download (replace with your analytics)
+                const game = this.parentElement.querySelector('.game-title').textContent;
+                console.log(`Downloading: ${game}`);
+            });
+        });
+    </script>
+</body>
+</html>
