@@ -6,10 +6,7 @@
     <title>AmiroGames - Instant Game Downloads</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Orbitron:wght@600&display=swap" rel="stylesheet>
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5637423785671489" crossorigin="anonymous"></script>
-    <meta name="google-adsense-account" content="ca-pub-5637423785671489">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Orbitron:wght@600&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary: #6C5CE7;
@@ -62,26 +59,6 @@
             color: rgba(255,255,255,0.7);
             margin-bottom: 2rem;
             font-weight: 300;
-        }
-        
-        /* Ad Container Styles */
-        .ad-container {
-            width: 100%;
-            margin: 2rem 0;
-            display: flex;
-            justify-content: center;
-            background: rgba(255,255,255,0.05);
-            border-radius: 8px;
-            padding: 20px;
-            min-height: 90px;
-            overflow: hidden;
-        }
-        
-        .ad-label {
-            color: rgba(255,255,255,0.5);
-            font-size: 0.8rem;
-            text-align: center;
-            margin-top: 5px;
         }
         
         .game-grid {
@@ -180,10 +157,6 @@
             .game-grid {
                 grid-template-columns: 1fr;
             }
-            
-            .ad-container {
-                padding: 10px;
-            }
         }
     </style>
 </head>
@@ -196,20 +169,6 @@
     </header>
     
     <div class="container">
-        <!-- Top Banner Ad -->
-        <div class="ad-container">
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-5637423785671489"
-                 data-ad-slot="1234567890"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
-        <div class="ad-label">Advertisement</div>
-        
         <div class="game-grid">
             <!-- Bad Parenting -->
             <div class="game-card">
@@ -230,20 +189,6 @@
                     <a href="http://fs20.megadb.xyz:8080/d/47ned4aoy5vxygoid3w7daqegpbaeghxvsojozcah64v2oe3tmvldnpxo6vfp4rgiqjbd7kx/Dinkum-SteamRIP.com.rar" class="download-btn" download>Download Now</a>
                 </div>
             </div>
-            
-            <!-- Mid-Page Banner Ad -->
-            <div class="ad-container">
-                <ins class="adsbygoogle"
-                     style="display:block"
-                     data-ad-client="ca-pub-5637423785671489"
-                     data-ad-slot="0987654321"
-                     data-ad-format="auto"
-                     data-full-width-responsive="true"></ins>
-                <script>
-                     (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            </div>
-            <div class="ad-label">Advertisement</div>
             
             <!-- Five Nights At Freddy's 3 -->
             <div class="game-card">
@@ -275,20 +220,6 @@
                 </div>
             </div>
         </div>
-        
-        <!-- Bottom Banner Ad -->
-        <div class="ad-container">
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-5637423785671489"
-                 data-ad-slot="5678901234"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
-        <div class="ad-label">Advertisement</div>
     </div>
 
     <footer>
@@ -313,17 +244,9 @@
                 console.log(`Downloading: ${game}`);
             });
         });
-        
-        // Initialize ads
-        document.addEventListener('DOMContentLoaded', function() {
-            // Load ads after a slight delay
-            setTimeout(function() {
-                const ads = document.querySelectorAll('.adsbygoogle');
-                ads.forEach(ad => {
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                });
-            }, 500);
-        });
     </script>
 </body>
 </html>
+
+heres adsense:<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5637423785671489"
+     crossorigin="anonymous"></script>
