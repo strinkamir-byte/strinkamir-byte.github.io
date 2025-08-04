@@ -14,7 +14,6 @@
             --dark: #0F0F15;
             --light: #F5F6FA;
             --accent: #00CEC9;
-            --warning: #FF9F43;
         }
         
         * {
@@ -62,24 +61,6 @@
             font-weight: 300;
         }
         
-        .alert-banner {
-            background-color: var(--warning);
-            color: #000;
-            padding: 1rem;
-            border-radius: 8px;
-            margin: 2rem auto;
-            max-width: 800px;
-            text-align: center;
-            font-weight: 600;
-            animation: pulse 2s infinite;
-        }
-        
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.02); }
-            100% { transform: scale(1); }
-        }
-        
         .game-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -94,26 +75,12 @@
             transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
             border: 1px solid rgba(255,255,255,0.05);
-            position: relative;
         }
         
         .game-card:hover {
             transform: translateY(-8px);
             box-shadow: 0 12px 24px rgba(0,0,0,0.3);
             border-color: var(--primary);
-        }
-        
-        .maintenance-badge {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background-color: var(--warning);
-            color: #000;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            z-index: 2;
         }
         
         .game-image {
@@ -173,11 +140,6 @@
             transform: translateY(-2px);
         }
         
-        .coming-soon {
-            background: #333 !important;
-            cursor: not-allowed;
-        }
-        
         footer {
             text-align: center;
             padding: 3rem 0;
@@ -207,110 +169,54 @@
     </header>
     
     <div class="container">
-        <div class="alert-banner">
-            ⚠️ YES WE ARE IN TECHNICAL DIFFICULTIES ⚠️<br>
-            We know about the "Internal Server Error" bug and are working on it!
-        </div>
-        
         <div class="game-grid">
             <!-- Bad Parenting -->
             <div class="game-card">
-                <div class="maintenance-badge">FIXING</div>
-                <div class="game-image" style="background-image: url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3205080/header.jpg?t=1739082924')"></div>
+                <div class="game-image" style="background-image: url('https://images.unsplash.com/photo-1598550476439-6847785fcea6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80')"></div>
                 <div class="game-info">
                     <h3 class="game-title">Bad Parenting</h3>
                     <div class="game-genre">Simulation • Strategy</div>
-                    <a href="#" class="download-btn coming-soon">Server Fixing...</a>
+                    <a href="https://flashbang.sh/dl/tTQ5u7tZsrCxFzDWI1kRhtl__aVARwpCgqlMdtATsGB21LTNZF1vgXZVYEoXpB4Z0QB492kZmwuX5Hl7Qm0T0907d1wDlAzptW05OddOVk1XYdsquguZyWqx1lQgyxgm4vQ?v=1754305120-SZx%2F7iisYzLIavVaWHbLrbylMmw%2FbMrTaKbKvxeHfDM%3D" class="download-btn" download>Download Now</a>
                 </div>
             </div>
             
             <!-- Dinkum -->
             <div class="game-card">
-                <div class="maintenance-badge">FIXING</div>
-                <div class="game-image" style="background-image: url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1062520/e044753ed5ae91bb81cbbb6bddfdd7cead5cc9af/capsule_616x353.jpg?t=1747292516')"></div>
+                <div class="game-image" style="background-image: url('https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80')"></div>
                 <div class="game-info">
                     <h3 class="game-title">Dinkum</h3>
                     <div class="game-genre">Adventure • Farming</div>
-                    <a href="#" class="download-btn coming-soon">Server Fixing...</a>
+                    <a href="http://fs20.megadb.xyz:8080/d/47ned4aoy5vxygoid3w7daqegpbaeghxvsojozcah64v2oe3tmvldnpxo6vfp4rgiqjbd7kx/Dinkum-SteamRIP.com.rar" class="download-btn" download>Download Now</a>
                 </div>
             </div>
             
             <!-- Five Nights At Freddy's 3 -->
             <div class="game-card">
-                <div class="maintenance-badge">FIXING</div>
-                <div class="game-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/2/2b/FNAF3Artwork.png')"></div>
+                <div class="game-image" style="background-image: url('https://images.unsplash.com/photo-1607853202273-797f1c22a38e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80')"></div>
                 <div class="game-info">
                     <h3 class="game-title">FNAF 3</h3>
                     <div class="game-genre">Horror • Survival</div>
-                    <a href="#" class="download-btn coming-soon">Server Fixing...</a>
+                    <a href="http://fs21.megadb.xyz:8080/d/43nkbvqoy5vxygoid7w6vvycmqigg5cdiz5whii3ouclqvq37ry2j5tek6oqp6dxdfens25m/Five-Nights-at-Freddys-3-SteamRIP.com.rar" class="download-btn" download>Download Now</a>
                 </div>
             </div>
             
             <!-- Football Life Simulator -->
             <div class="game-card">
-                <div class="maintenance-badge">FIXING</div>
-                <div class="game-image" style="background-image: url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3158270/f04d52a2630ca8cbc3e8f6b4dfbff329e1b77688/capsule_616x353.jpg?t=1753087683')"></div>
+                <div class="game-image" style="background-image: url('https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80')"></div>
                 <div class="game-info">
                     <h3 class="game-title">Football Life</h3>
                     <div class="game-genre">Sports • Simulation</div>
-                    <a href="#" class="download-btn coming-soon">Server Fixing...</a>
+                    <a href="https://flashbang.sh/dl/L0NCwaW-LBAI8Oobjkn3RurF3wNNMjG8NNMXZn3Ak6fnEkJz_CqakCby0N47i7jQesdyUXpioQ4rAYZW_KCBs7EI2Q81G28No6PAFYrIp662kmR1OhHb_WeHNjkY_CcG1vVGM6I3wZIdwLvr?v=1754305812-15sg9ZYXJGUHW8KuX3wWUMlLe9RRFUJCnlUPNIsSRkY%3D" class="download-btn" download>Download Now</a>
                 </div>
             </div>
             
             <!-- Hollow Knight -->
             <div class="game-card">
-                <div class="maintenance-badge">FIXING</div>
-                <div class="game-image" style="background-image: url('https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000003208/4643fb058642335c523910f3a7910575f56372f612f7c0c9a497aaae978d3e51')"></div>
+                <div class="game-image" style="background-image: url('https://images.unsplash.com/photo-1580757468214-73e4b1a6cc5a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80')"></div>
                 <div class="game-info">
                     <h3 class="game-title">Hollow Knight</h3>
                     <div class="game-genre">Adventure • Metroidvania</div>
-                    <a href="#" class="download-btn coming-soon">Server Fixing...</a>
-                </div>
-            </div>
-            
-            <!-- NEW GAMES ADDED BELOW -->
-            
-            <!-- Minecraft -->
-            <div class="game-card">
-                <div class="maintenance-badge">COMING SOON</div>
-                <div class="game-image" style="background-image: url('https://image.api.playstation.com/vulcan/ap/rnd/202407/1020/91fe046f742042e3b31e57f7731dbe2226e1fd1e02a36223.jpg')"></div>
-                <div class="game-info">
-                    <h3 class="game-title">Minecraft</h3>
-                    <div class="game-genre">Sandbox • Adventure</div>
-                    <a href="#" class="download-btn coming-soon">Available Soon</a>
-                </div>
-            </div>
-            
-            <!-- Stardew Valley -->
-            <div class="game-card">
-                <div class="maintenance-badge">COMING SOON</div>
-                <div class="game-image" style="background-image: url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/413150/capsule_616x353.jpg?t=1711128146')"></div>
-                <div class="game-info">
-                    <h3 class="game-title">Stardew Valley</h3>
-                    <div class="game-genre">Farming • RPG</div>
-                    <a href="#" class="download-btn coming-soon">Available Soon</a>
-                </div>
-            </div>
-            
-            <!-- Terraria -->
-            <div class="game-card">
-                <div class="maintenance-badge">COMING SOON</div>
-                <div class="game-image" style="background-image: url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/105600/header.jpg?t=1731252354')"></div>
-                <div class="game-info">
-                    <h3 class="game-title">Terraria</h3>
-                    <div class="game-genre">Sandbox • Adventure</div>
-                    <a href="#" class="download-btn coming-soon">Available Soon</a>
-                </div>
-            </div>
-            
-            <!-- Among Us -->
-            <div class="game-card">
-                <div class="maintenance-badge">COMING SOON</div>
-                <div class="game-image" style="background-image: url('https://cdn-uploads.gameblog.fr/img/news/572021_666390993957c.jpg')"></div>
-                <div class="game-info">
-                    <h3 class="game-title">Among Us</h3>
-                    <div class="game-genre">Party • Strategy</div>
-                    <a href="#" class="download-btn coming-soon">Available Soon</a>
+                    <a href="https://flashbang.sh/dl/_WcXoxjt5KxZEFgFCVUTpX7Kqi7LTcJtLukjK9LpCO_PKetbkvn2eo1W9-a0txnrA7WhSVoramgjhycvfom3XRFSlHjDajaGauAa4_2U4UIhuuLsW_0h7LHFMk31KEYOtSo?v=1754305948-tC%2FG08pAXEPbUUFhnc%2Bw5KRO%2BeKblC95wfAD%2Fkb6y28%3D" class="download-btn" download>Download Now</a>
                 </div>
             </div>
         </div>
@@ -318,14 +224,14 @@
 
     <footer>
         <div class="container">
-            © 2025 AmiroGames. All rights reserved.<br>
+            © 2023 AmiroGames. All rights reserved.<br>
             <small>All game titles are property of their respective owners.</small>
         </div>
     </footer>
 
     <script>
         // Add animation to download buttons
-        document.querySelectorAll('.download-btn:not(.coming-soon)').forEach(btn => {
+        document.querySelectorAll('.download-btn').forEach(btn => {
             btn.addEventListener('click', function(e) {
                 // Add click animation
                 this.style.transform = 'translateY(2px)';
@@ -336,14 +242,6 @@
                 // Track download (replace with your analytics)
                 const game = this.parentElement.querySelector('.game-title').textContent;
                 console.log(`Downloading: ${game}`);
-            });
-        });
-        
-        // Show maintenance message for disabled buttons
-        document.querySelectorAll('.coming-soon').forEach(btn => {
-            btn.addEventListener('click', function(e) {
-                e.preventDefault();
-                alert("We're currently fixing our servers. Downloads will be available soon!");
             });
         });
     </script>
